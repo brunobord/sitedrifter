@@ -27,7 +27,7 @@ import json
 from jinja2 import Template
 from markdown import Markdown
 
-VERSION = '1.0.0'
+VERSION = '1.0.0-dev'
 
 now = datetime.datetime.now()
 FILE_EXTENSIONS = ['.md', '.markdown', '.mkd']
