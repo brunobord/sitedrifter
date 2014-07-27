@@ -64,6 +64,19 @@ The following command will build your pages and put them in the build directory,
 $ drift build
 ```
 
+### Options
+
+Here are the various optional arguments with their default value.
+
+* ``--source-dir`` ("src/"): Source directory, where the markdown content is written
+* ``--build-dir`` ("build/"): Directory where the web content is built
+* ``--static-dir`` ("static/"): Directory where one can find the static files (JS, CSS, Images)
+* ``--vendor-dir`` ("vendor/"): Directory where one can find static files (JS, CSS, Images), but coming from externale resources (external libs)
+* ``--template-dir`` ("templates/"): Template directory, where we can find Jinja2 files
+* ``--template-name`` ("base.html"): Base template name
+* ``--navigation-file`` ("navigation.json"): Navigation file name (or full path)
+* ``--root-name`` ("index"): The name of your root page (the home page)
+
 ----
 
 ## About
