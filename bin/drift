@@ -5,9 +5,10 @@
 This script builds HTML documents out of the Markdown files and stores them in
 the `build` directory.
 
-Usage:
+Usage::
 
-    python drift.py build
+    drift init   # to start a project
+    drift build  # to build the website
 
 You can cleanup the `build` directory by using the "clean" command, too.
 
