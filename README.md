@@ -4,7 +4,11 @@ Sitedrifter is a Markdown to HTML converter to build static websites. It's an en
 
 ## Install
 
-Once you're in your virtualenv, simply clone this repository:
+Via pip, in a virtualenv, for example:
+
+    pip install sitedrifter
+
+Or simply clone this repository and install it in dev mode:
 
     git clone https://github.com/brunobord/sitedrifter.git
     cd sitedrifter
