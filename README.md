@@ -90,6 +90,25 @@ Sitedrifter builds the pages using a Jinja2-based template. Along with the conte
 * ``navigation``: the content of the ``navigation.json`` file, serialized to be used by the navigation loop.
 * ``current``: the current name of the page,
 
+### Navigation
+
+This file should be a JSON list. Here is an example:
+
+```json
+[
+    {"caption": "Prepare"},
+    {"url": "other", "caption": "See Other sections"},
+    {"url": "", "caption": "Adventure", "children": [
+        {"url": "marketplace", "caption": "Marketplace"},
+        {"url": "travel", "caption": "Space Travel"}
+    ]}
+]
+```
+
+When there's not URL, the navigation item will be interpreted as a simple non-interactive list item. It'll be used as a section title.
+
+When you define children, they'll be used as a sub-navigation item list.
+
 ----
 
 ## About
