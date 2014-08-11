@@ -79,6 +79,19 @@ Here are the various optional arguments with their default value.
 
 ----
 
+## Template
+
+Sitedrifter builds the pages using a Jinja2-based template. Along with the content, according to the context, it injects useful variables into the template, so you can use them in your templates.
+
+
+* ``path_prefix``: when you're on the root page, it's "." but when you're in a deeper page, it's the relative path (such as: ".."),
+* ``root_name``: It's the name of the root page, as defined in the ``--root-name`` option,
+* ``date``: the current date and time. (a.k.a. "now"),
+* ``navigation``: the content of the ``navigation.json`` file, serialized to be used by the navigation loop.
+* ``current``: the current name of the page,
+
+----
+
 ## About
 
 Sitedrifter is (c) 2014 Bruno Bord - This code is published under the terms of the MIT License. See the LICENSE file for more information.
